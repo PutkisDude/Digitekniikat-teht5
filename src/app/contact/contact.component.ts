@@ -22,9 +22,11 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     this.submitted = true;
     if (this.messageForm.invalid) {
+      console.log('invalid msg');
       return;
     }
     this.success = true;
+    console.log('a msg sent');
   }
 
   ngOnInit(): void {
